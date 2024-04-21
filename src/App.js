@@ -1,12 +1,9 @@
 import Nav from "./components/Nav";
-import Home from "./components/Home";
-import Headroom from "react-headroom";
+import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <Headroom>
-        <Nav />
-      </Headroom>
+      <Nav />
       <Home />
     </>
   );
