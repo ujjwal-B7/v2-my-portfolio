@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div
           className=" profile-section relative lg:h-72 h-60"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <div className="profile lg:w-72 w-60">
             <img

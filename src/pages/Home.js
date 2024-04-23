@@ -31,7 +31,10 @@ const Home = () => {
   };
   return (
     <>
-      <section className="relative h-[calc(100vh-5rem)] flex justify-center items-center">
+      <section
+        id="home"
+        className="relative h-[calc(100vh-5rem)] flex justify-center items-center"
+      >
         <motion.div
           className="xl:w-[60%] md:w-[80%] xl:ml-0 sm:ml-10 sm:px-0 px-4"
           variants={textVariants}
@@ -75,10 +78,14 @@ const Home = () => {
           variants={iconVariants}
           initial="initial"
           animate="animate"
-          className="md:block hidden fixed bottom-0 lg:left-14 left-10 space-y-6 social-media-icons"
+          className="md:flex md:flex-col  md:justify-center md:items-center hidden fixed bottom-0 lg:left-14 left-10 space-y-6 social-media-icons"
         >
           <div className="icons">
-            <a href="https://github.com/ujjwal-B7">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/ujjwal-B7"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -88,15 +95,19 @@ const Home = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-5 h-5"
+                className="w-6 h-6"
               >
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
               </svg>
             </a>
           </div>
           <div className="icons">
-            <a href="https://www.facebook.com/ujjwal.basnet.1257">
-              <svg className="w-5" viewBox="0 0 128 128">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/ujjwal.basnet.1257"
+            >
+              <svg className="w-9 h-9" viewBox="0 0 160 160">
                 <rect fill="none" x="4.83" y="4.83" rx="6.53" ry="6.53"></rect>
                 <path
                   fill="#8892b0"
@@ -106,7 +117,11 @@ const Home = () => {
             </a>
           </div>
           <div className="icons">
-            <a href="https://www.instagram.com/ujjwal_basnet7/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/ujjwal_basnet7/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -116,7 +131,7 @@ const Home = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-5 h-5"
+                className="w-6 h-6"
               >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -125,7 +140,11 @@ const Home = () => {
             </a>
           </div>
           <div className="icons">
-            <a href="https://twitter.com/basnetujjwal98">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/basnetujjwal98"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -135,7 +154,7 @@ const Home = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-twitter"
+                className="w-6 h-6"
               >
                 <title>Twitter</title>
                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
@@ -153,7 +172,7 @@ const Home = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-linkedin"
+                className="w-6 h-6"
               >
                 <title>LinkedIn</title>
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -162,7 +181,7 @@ const Home = () => {
               </svg>
             </a>
           </div>
-          <div className="ml-2 border-l-[#a8b2d1] border-l-2 h-24"></div>
+          <div className="border-l-[#a8b2d1] border-l-2 h-24"></div>
         </motion.div>
       </section>
     </>

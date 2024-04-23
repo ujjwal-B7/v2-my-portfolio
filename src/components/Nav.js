@@ -45,8 +45,11 @@ const Nav = () => {
           >
             Ujjwal Basnet
           </motion.a>
-          <motion.div variants={textVariants}>
-            <ol className="md:flex hidden items-center gap-10 font-sf text-[1rem] title list-decimal">
+          <motion.div
+            variants={textVariants}
+            className="flex items-center text-[1.1rem]"
+          >
+            <ol className="md:flex hidden items-center gap-10 font-sf  title list-decimal">
               <motion.li variants={textVariants}>
                 <a href="#about">About</a>
               </motion.li>
@@ -59,17 +62,17 @@ const Nav = () => {
               <motion.li variants={textVariants}>
                 <a href="#contact">Contact</a>
               </motion.li>
-              <motion.li
-                variants={textVariants}
-                className="list-none border-[#64ffda] border-[1px]  rounded highlighted-text resume-link px-2 pt-2 pb-1"
-              >
-                <a href="./cv/Ujjwal-Basnet-cv.pdf" download>
-                  Download Resume
-                </a>
-              </motion.li>
             </ol>
+            <motion.li
+              variants={textVariants}
+              className="ml-10 list-none border-[#64ffda] border-[1px]  rounded highlighted-text  resume-link px-4 pt-2 pb-1"
+            >
+              <a href="./cv/Ujjwal-Basnet-cv.pdf" download>
+                Resume
+              </a>
+            </motion.li>
           </motion.div>
-          <div
+          {/* <div
             className="md:hidden hamburger cursor-pointer rounded"
             tabIndex="0"
           >
@@ -87,7 +90,7 @@ const Nav = () => {
                 d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
               />
             </svg>
-          </div>
+          </div> */}
         </motion.section>
       </nav>
     </Headroom>
