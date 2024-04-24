@@ -59,8 +59,13 @@ body{
 .project-card{
   background-color: #112240;
 }
-.skills-text{
+.skills-text,.project-text{
   color: #a8b2d1;
+}
+@media (max-width:768px){
+  .project-text{
+    color: #ccd6f6;
+  }
 }
 .title{
   color: #ccd6f6;
@@ -110,11 +115,12 @@ box-shadow:4px 5px 0 #64ffda;
   display: block;
   position: relative;
   top: -3px;
-  width: 300px;
+  width: 60%;
   height: 1px;
   margin-left: 20px;
   background-color:  #233554;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #ccd6f6;
@@ -149,4 +155,31 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(3px, 3px); 
 }
 
+.skills-transition{
+  transition: 0.5s all ease;
+}
+@media (min-width:768px){
+  .section {
+    /* flex: 1 1 50%;  */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: end;
+  }
+  .section:nth-child(even) {
+    text-align: start;
+    flex-direction: row-reverse;
+  }
+}
 
+@media (max-width:768px){
+  .details{
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-div{
+    min-height: 20rem;
+  }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 const projects = [
   {
     link: "https://aaryans-fitness.netlify.app/",
@@ -20,17 +19,20 @@ const projects = [
 ];
 
 const Work = () => {
-  const [show, setShow] = useState(false);
-
-  function resetNavOnResize() {
-    if (window.innerWidth > 768) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  }
-  window.addEventListener("resize", resetNavOnResize);
   return (
+    // <section className="mb-32 flex list-none justify-center items-center">
+    //   <section className="xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full flex md:flex-row flex-col md:items-start items-center gap-10 lg:px-0 px-4">
+    //     <div
+    //       className="md:w-[60%] w-full md:px-0 space-y-4"
+    //       data-aos="fade-right"
+    //     >
+    //       <div className="flex">
+    //         <span className=" title-number">02.</span>
+    //         <h2 className="mb-7 numbered-heading">Somethings I've built</h2>
+    //       </div>
+    //     </div>
+    //   </section>
+    // </section>
     <section className="lg:px-[150px] md:px-[100px] px-4">
       <section className="max-w-[980px] mx-auto">
         <div className="flex mb-10">
@@ -41,11 +43,12 @@ const Work = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-div rounded relative md:mb-32 mb-16 flex  section bg-cover  bg-center    
+              className="rounded relative md:mb-20 mb-14 flex items-center section bg-cover bg-center    
               "
-              style={{
-                backgroundImage: show ? `url(${project.image})` : "none",
-              }}
+              // style={{
+              //   backgroundImage:
+              //     window.innerWidth < 768 ? `url(${project.image})` : "none",
+              // }}
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -53,25 +56,25 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
                 href={project.link}
-                className="md:block lg:mt-0 mt-10 hidden relative md:w-[60%] lg:aspect-[5/3.4] md:aspect-[5/4]  md:opacity-50 md:hover:opacity-100 skills-transition"
+                className="relative md:w-[60%] md:aspect-[5/3.4] aspect-[5/2.5] md:opacity-50 md:hover:opacity-100 skills-transition"
               >
                 <img
-                  className="relative w-full rounded h-full object-cover"
+                  className="w-full rounded h-full object-cover"
                   src={project.image}
                   alt="project_image"
                 />
               </a>
               <div
-                className={`md:bg-transparent rounded bg-[#233554]/85  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] w-full z-50 ${
-                  index % 2 === 0 ? "md:left-[55%] left-0" : "md:left-[0%]"
+                className={`md:bg-none bg-[#112240]/95 absolute  md:p-0 p-10  details lg:w-[52%] md:w-[60%]  z-50 md:${
+                  index % 2 === 0 ? "left-[55%]" : "left-[0%]"
                 }`}
               >
                 <h3 className="highlighted-text text-lg">Featured Project</h3>
                 <h1 className="title text-[28px] py-3">{project.name}</h1>
-                <div className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4">
+                <div className="md:shadow-md md:bg-[#112240] rounded-md p-4 skills-text">
                   {project.description}
                 </div>
-                <div className="project-text mt-3 text md:text-[20px] text-[17px]">
+                <div className="skills-text mt-3">
                   <ul className="flex gap-4 flex-wrap">
                     {project.techstack.map((tech, index) => (
                       <li key={index}>{tech}</li>
@@ -82,30 +85,6 @@ const Work = () => {
             </div>
           ))}
         </div>
-        {/* <ul className="project-card">
-          <li className="project-li">
-            <div className="project-content">
-              <div>
-                <p className="project-overline">Featured Project</p>
-                <h3 className="project-title">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="aaryans-fitness.netlify.app"
-                  >Aaryans fitness</a>
-                </h3>
-                <div className="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tempora eos sequi quos voluptate consequuntur rerum similique, distinctio expedita adipisci!</div>
-                <ul class="project-tech-list"><li>VS Code</li><li>Sublime Text</li><li>Atom</li><li>iTerm2</li><li>Hyper</li></ul>
-              </div>
-            </div>
-<div className="project-image">
-  <a href="/aaryans-fitness.netlify.app"></a>
-  <div>
-    <img src="./images/demotemplate.jpg" alt="" />
-  </div>
-</div>
-          </li>
-        </ul> */}
       </section>
     </section>
   );
