@@ -98,10 +98,8 @@ box-shadow:4px 5px 0 #64ffda;
   font-size: clamp(26px, 5vw, 32px);
   white-space: nowrap;
 }
-.numbered-heading::before {
-  position: relative;
-  counter-increment: section 1;
-  content: "0" counter(section) ".";
+.title-number{
+ margin-top: 0.25rem;
   margin-right: 10px;
   color: #64ffda;
   font-size: clamp(16px, 3vw,20px);
@@ -126,7 +124,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-  font-size: 19px;
 }
 .skills li::before{
     content: "▹";

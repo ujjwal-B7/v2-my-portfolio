@@ -2,7 +2,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="mb-32 flex list-none justify-center items-center">
-      <section className="xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full flex md:flex-row flex-col md:items-start items-center gap-10 lg:px-0 px-4">
+      <section className="xl:w-[60%] lg:w-[70%] md:w-[80%] w-full flex md:flex-row flex-col md:items-start items-center gap-10 lg:px-0 px-10 ">
         <div
           className="md:w-[60%] w-full md:px-0 space-y-4"
           data-aos="fade-right"
@@ -20,7 +20,7 @@ const About = () => {
             and fresh perspective can bring value to your projects!
           </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
-          <ul className="skills grid grid-cols-3 max-w-[29rem]">
+          <ul className="skills grid grid-cols-3 max-w-[29rem] lg:text-[19px] text-[17px]">
             <li>Html</li>
             <li>Css</li>
             <li>Tailwind Css</li>
@@ -34,7 +34,7 @@ const About = () => {
           </ul>
         </div>
         <div
-          className=" profile-section relative lg:h-72 h-60"
+          className="md:mt-16 profile-section relative lg:h-72 h-60"
           data-aos="fade-up"
         >
           <div className="profile lg:w-72 w-60">
