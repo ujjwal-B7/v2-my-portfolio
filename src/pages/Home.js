@@ -48,7 +48,7 @@ const Home = () => {
             I build things for the web.
           </motion.h3>
           <motion.p variants={textVariants} className="sm:w-[70%] mt-5 mb-9">
-            I’m a software engineer specializing in building (and occasionally
+            I’m a software developer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m focused
             on building accessible, human-centered products
           </motion.p>
