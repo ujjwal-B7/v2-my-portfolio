@@ -47,27 +47,39 @@ const Nav = () => {
           </motion.a>
           <motion.div
             variants={textVariants}
-            className="flex items-center text-[1.1rem]"
+            className="flex items-center text-[15px]"
           >
-            <ol className="md:flex hidden items-center gap-10 font-sf  title list-decimal">
+            <ol className="md:flex hidden items-center gap-7 font-sf  title nav-links">
               <motion.li variants={textVariants}>
-                <a href="#about">About</a>
+                <a href="#about">
+                  <span>01. </span>
+                  About
+                </a>
               </motion.li>
               <motion.li variants={textVariants}>
-                <a href="#work">Work</a>
+                <a href="#work">
+                  <span>02. </span>
+                  Work
+                </a>
               </motion.li>
               <motion.li variants={textVariants}>
-                <a href="#skills">Skills</a>
+                <a href="#skills">
+                  <span>03. </span>
+                  Skills
+                </a>
               </motion.li>
               <motion.li variants={textVariants}>
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                  <span>04. </span>
+                  Contact
+                </a>
               </motion.li>
             </ol>
             <motion.li
               variants={textVariants}
               className="ml-10 list-none border-[#64ffda] border-[1px]  rounded highlighted-text  resume-link px-4 pt-2 pb-1"
             >
-              <a href="./cv/Ujjwal-Basnet-cv.pdf" download>
+              <a className="font-sf " href="./cv/Ujjwal-Basnet-cv.pdf" download>
                 Resume
               </a>
             </motion.li>

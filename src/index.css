@@ -50,6 +50,16 @@ body{
 .font-sf{
   font-family: 'SFMono-Regular';
 }
+.nav-links a,span{
+  font-family: 'SFMono-Regular';
+}
+.nav-links a span{
+  color: #64ffda;
+}
+.nav-links a:hover{
+  color: #64ffda;
+  transition: 0.3s;
+}
 .highlighted-text{
   color: #64ffda;
 }
@@ -104,7 +114,6 @@ box-shadow:4px 5px 0 #64ffda;
   white-space: nowrap;
 }
 .title-number{
- margin-top: 0.25rem;
   margin-right: 10px;
   color: #64ffda;
   font-size: clamp(16px, 3vw,20px);
@@ -130,6 +139,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
+  font-family: 'SFMono-Regular';
+
 }
 .skills li::before{
     content: "▹";

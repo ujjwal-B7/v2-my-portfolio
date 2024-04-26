@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="md:hidden block">
           <SocialLinks />
         </div>
-        <div>Designed & Built by Ujjwal Basnet</div>
+        <p className="font-sf text-[14px]">Designed & Built by Ujjwal Basnet</p>
       </section>
     </>
   );

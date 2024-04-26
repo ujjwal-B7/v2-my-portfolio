@@ -66,8 +66,10 @@ const Work = () => {
                   index % 2 === 0 ? "md:left-[55%] left-0" : "md:left-[0%]"
                 }`}
               >
-                <h3 className="highlighted-text text-lg">Featured Project</h3>
-                <h1 className="title text-[28px] py-3">
+                <h3 className="highlighted-text font-sf text-[14px] font-medium">
+                  Featured Project
+                </h3>
+                <h1 className="title text-[28px] pt-3 md:pb-3 pb-5">
                   <a target="_blank" rel="noreferrer" href={project.link}>
                     {project.name}
                   </a>
@@ -75,10 +77,12 @@ const Work = () => {
                 <div className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4">
                   {project.description}
                 </div>
-                <div className="project-text mt-3 text md:text-[20px] text-[17px]">
-                  <ul className="flex gap-4 flex-wrap">
+                <div className="project-text md:mt-3 mt-5 text md:text-[20px] text-[17px]">
+                  <ul className="flex gap-4 flex-wrap ">
                     {project.techstack.map((tech, index) => (
-                      <li key={index}>{tech}</li>
+                      <li className="font-sf text-[14px]" key={index}>
+                        {tech}
+                      </li>
                     ))}
                   </ul>
                 </div>

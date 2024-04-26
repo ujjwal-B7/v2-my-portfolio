@@ -9,7 +9,7 @@ const About = () => {
       >
         <div className="md:w-[60%] w-full md:px-0 space-y-4">
           <div className="flex">
-            <span className=" title-number">01.</span>
+            <span className="title-number">01.</span>
             <h2 className="mb-7 numbered-heading">About Me</h2>
           </div>
           <p>
@@ -24,7 +24,7 @@ const About = () => {
             and fresh perspective can bring value to your projects!
           </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
-          <ul className="skills grid grid-cols-3 max-w-[29rem] lg:text-[19px] text-[17px]">
+          <ul className="skills grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 lg:gap-0 gap-x-4 w-full lg:text-[15px] text-[13px]">
             <li>Html</li>
             <li>Css</li>
             <li>Tailwind Css</li>

@@ -31,7 +31,7 @@ const Home = () => {
         >
           <motion.h2
             variants={textVariants}
-            className="text-[1.2rem] highlighted-text"
+            className="text-base font-normal highlighted-text font-sf"
           >
             Hi, my name is
           </motion.h2>
@@ -55,10 +55,12 @@ const Home = () => {
           <motion.button
             variants={textVariants}
             className="
-          border-[#64ffda] border-[1px]  rounded highlighted-text resume-link px-10 pt-4 pb-2 
+          border-[#64ffda] border-[1px]  rounded highlighted-text resume-link text-base px-10 pt-4 pb-2 
           "
           >
-            <a href="mailto:basnetujjwal98@gmail.com">Hire Me</a>
+            <a className="font-sf" href="mailto:basnetujjwal98@gmail.com">
+              Hire Me
+            </a>
           </motion.button>
         </motion.div>
         {/* social media links */}

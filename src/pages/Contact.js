@@ -46,7 +46,9 @@ const Contact = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <span className="title-number">03. What's Next?</span>
+          <span className="title-number" style={{ fontSize: "16px" }}>
+            03. What's Next?
+          </span>
           <h3 className="medium-heading font-[600] title">Get In Touch</h3>
           <p className="pb-4">
             {" "}
@@ -58,7 +60,12 @@ const Contact = () => {
           border-[#64ffda] border-[1px]  rounded highlighted-text resume-link px-10 pt-4 pb-2 
           "
           >
-            <a href="mailto:basnetujjwal98@gmail.com">Contact Me</a>
+            <a
+              className="text-base font-sf"
+              href="mailto:basnetujjwal98@gmail.com"
+            >
+              Contact Me
+            </a>
           </button>
         </div>
         {/* <div className="w-full flex  justify-center">
