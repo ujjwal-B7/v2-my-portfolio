@@ -23,7 +23,7 @@ const Work = () => {
   const [show, setShow] = useState(false);
 
   function resetNavOnResize() {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 768) {
       setShow(false);
     } else {
       setShow(true);
@@ -41,7 +41,7 @@ const Work = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-div rounded relative md:mb-32 mb-16 flex  section bg-cover  bg-center    
+              className="project-div rounded relative lg:mb-32 md:mb-24 mb-16 flex  section bg-cover items-center bg-center    
               "
               style={{
                 backgroundImage: show ? `url(${project.image})` : "none",
@@ -53,7 +53,7 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
                 href={project.link}
-                className="md:block lg:mt-0 mt-10 hidden relative md:w-[60%] lg:aspect-[5/3.4] md:aspect-[5/4]  md:opacity-50 md:hover:opacity-100 skills-transition"
+                className="md:block lg:mt-0 mt-10 hidden relative lg:w-[60%] w-[70%] lg:aspect-[5/3.4] md:aspect-[5/4]  md:opacity-50 md:hover:opacity-100 skills-transition"
               >
                 <img
                   className="relative w-full rounded h-full object-cover"
@@ -62,12 +62,16 @@ const Work = () => {
                 />
               </a>
               <div
-                className={`md:bg-transparent rounded bg-[#233554]/85  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] w-full z-50 ${
+                className={`md:bg-transparent rounded bg-[#0a192f]/90 md:shadow-none shadow-md  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] z-50 ${
                   index % 2 === 0 ? "md:left-[55%] left-0" : "md:left-[0%]"
                 }`}
               >
                 <h3 className="highlighted-text text-lg">Featured Project</h3>
-                <h1 className="title text-[28px] py-3">{project.name}</h1>
+                <h1 className="title text-[28px] py-3">
+                  <a target="_blank" rel="noreferrer" href={project.link}>
+                    {project.name}
+                  </a>
+                </h1>
                 <div className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4">
                   {project.description}
                 </div>
