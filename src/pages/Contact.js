@@ -42,12 +42,12 @@ const Contact = () => {
     <section className="pt-20 pb-36 lg:px-[150px] md:px-[100px] px-4 mt-32">
       <section className="max-w-[980px] mx-auto flex flex-col items-center">
         <div
-          className="w-[60%] text-center mb-10 space-y-5"
+          className="lg:w-[60%] sm:w-[80%] w-[90%] text-center mb-10 space-y-5"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <span className="title-number">03. What's Next?</span>
-          <h3 className="text-[60px] font-[600] title">Get In Touch</h3>
+          <h3 className="medium-heading font-[600] title">Get In Touch</h3>
           <p className="pb-4">
             {" "}
             My inbox is always open. Whether you have a question or just want to

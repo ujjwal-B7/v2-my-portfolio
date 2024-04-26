@@ -58,7 +58,7 @@ const Home = () => {
           border-[#64ffda] border-[1px]  rounded highlighted-text resume-link px-10 pt-4 pb-2 
           "
           >
-            Hire Me
+            <a href="mailto:basnetujjwal98@gmail.com">Hire Me</a>
           </motion.button>
         </motion.div>
         {/* social media links */}
