@@ -2,6 +2,14 @@ import React from "react";
 import { useState } from "react";
 const projects = [
   {
+    link: "https://crypto-template-beta.vercel.app/",
+    image: "./images/crypto.jpg",
+    name: "Crypto Template",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+    techstack: ["Nextjs", "Tailwindcss", "Shadcn ui"],
+  },
+  {
     link: "https://aaryans-fitness.netlify.app/",
     image: "./images/aaryans-fitness.jpg",
     name: "Aaryan's Fitness",
@@ -62,7 +70,7 @@ const Work = () => {
                 />
               </a>
               <div
-                className={`md:bg-transparent rounded bg-[#0a192f]/90 md:shadow-none shadow-md  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] z-50 ${
+                className={`md:bg-transparent rounded bg-[#0a192f]/85  md:shadow-none shadow-md  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] z-50 ${
                   index % 2 === 0 ? "md:left-[55%] left-0" : "md:left-[0%]"
                 }`}
               >
