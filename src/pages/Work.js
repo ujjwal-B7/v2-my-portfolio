@@ -10,6 +10,14 @@ const projects = [
     techstack: ["Nextjs", "Tailwindcss", "Shadcn ui"],
   },
   {
+    link: "https://education-templatee.netlify.app/",
+    image: "./images/schooltemplate.jpg",
+    name: "School Website Template",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+    techstack: ["React", "Tailwindcss"],
+  },
+  {
     link: "https://aaryans-fitness.netlify.app/",
     image: "./images/aaryans-fitness.jpg",
     name: "Aaryan's Fitness",
