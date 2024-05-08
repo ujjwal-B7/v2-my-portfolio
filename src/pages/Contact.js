@@ -1,6 +1,6 @@
 import React from "react";
-import { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import { useState, useRef } from "react";
+// import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   // const [loading, setLoading] = useState(false);
@@ -39,7 +39,7 @@ const Contact = () => {
   //     );
   // };
   return (
-    <section className="pt-20 pb-36 lg:px-[150px] md:px-[100px] px-4 mt-32">
+    <section id="contact" className="pt-20 pb-36 lg:px-[150px] md:px-[100px] px-4 mt-32">
       <section className="max-w-[980px] mx-auto flex flex-col items-center">
         <div
           className="lg:w-[60%] sm:w-[80%] w-[90%] text-center mb-10 space-y-5"

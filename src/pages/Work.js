@@ -47,7 +47,7 @@ const Work = () => {
   }
   window.addEventListener("resize", resetNavOnResize);
   return (
-    <section className="lg:px-[150px] md:px-[100px] px-4">
+    <section id="work" className="lg:px-[150px] md:px-[100px] px-4">
       <section className="max-w-[980px] mx-auto">
         <div className="flex mb-10">
           <span className=" title-number">02.</span>

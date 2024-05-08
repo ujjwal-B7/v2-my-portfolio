@@ -67,6 +67,7 @@ const Home = () => {
         <div className="md:block hidden">
           <SocialLinks />
         </div>
+        <div id="chatbox"></div>
       </section>
     </>
   );

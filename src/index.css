@@ -40,6 +40,7 @@
 }
 html{
   scroll-behavior: smooth;
+  scroll-padding: 8rem;
 }
 body{
   background-color: #0a192f;

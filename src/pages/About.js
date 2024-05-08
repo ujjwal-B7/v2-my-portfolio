@@ -1,7 +1,7 @@
 import React from "react";
 const About = () => {
   return (
-    <section className="mb-32 flex list-none justify-center items-center">
+    <section id="about" className="mb-32 flex list-none justify-center items-center">
       <section
         className="xl:w-[60%] lg:w-[70%] md:w-[80%] w-full flex md:flex-row flex-col md:items-start items-center gap-10 lg:px-0 px-4"
         data-aos="fade-up"

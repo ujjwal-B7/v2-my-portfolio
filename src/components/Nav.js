@@ -62,15 +62,15 @@ const Nav = () => {
                   Work
                 </a>
               </motion.li>
-              <motion.li variants={textVariants}>
+              {/* <motion.li variants={textVariants}>
                 <a href="#skills">
                   <span>03. </span>
                   Skills
                 </a>
-              </motion.li>
+              </motion.li> */}
               <motion.li variants={textVariants}>
                 <a href="#contact">
-                  <span>04. </span>
+                  <span>03. </span>
                   Contact
                 </a>
               </motion.li>
