@@ -78,7 +78,7 @@ const Work = () => {
                 />
               </a>
               <div
-                className={`md:bg-transparent rounded bg-[#0a192f]/85  md:shadow-none shadow-md  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] z-50 ${
+                className={`md:bg-transparent rounded bg-[#0a192f]/[94%]  md:shadow-none shadow-xl  md:absolute  md:pl-0 p-4 details lg:w-[52%] md:w-[60%] z-50 ${
                   index % 2 === 0 ? "md:left-[55%] left-0" : "md:left-[0%]"
                 }`}
               >
