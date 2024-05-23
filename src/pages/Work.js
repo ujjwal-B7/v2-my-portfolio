@@ -6,7 +6,7 @@ const projects = [
     image: "./images/crypto.jpg",
     name: "Crypto Template",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+      "Designed a sleek cryptocurrency landing page with a dark blue theme, featuring an intuitive layout and clean design. Optimized for responsiveness across all devices to ensure a seamless user experience.",
     techstack: ["Nextjs", "Tailwindcss", "Shadcn ui"],
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     image: "./images/schooltemplate.jpg",
     name: "School Website Template",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+      "Developed a modern school website template with a light theme, featuring user-friendly navigation and professional design. Ensured responsiveness across all devices for optimal accessibility and experience.",
     techstack: ["React", "Tailwindcss"],
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     image: "./images/aaryans-fitness.jpg",
     name: "Aaryan's Fitness",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+      "Crafted a vibrant gym website template with fee, gallery,classes and map sections, ensuring seamless responsiveness for optimal user experience.",
     techstack: ["React", "Tailwindcss"],
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     image: "./images/demotemplate.jpg",
     name: "Business Landing Page",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate a vero enim consectetur veniam. Neque rem laboriosam provident facilis.",
+      "Designed a sophisticated business landing page, showcasing static designs with elegance and professionalism to highlight your portfolio effectively.",
     techstack: ["React", "Tailwindcss"],
   },
 ];
