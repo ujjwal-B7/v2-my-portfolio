@@ -208,3 +208,6 @@ h1, h2, h3, h4, h5, h6 {
 outline: none;
 } */
 
+.shadow-custom{
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.427);
+}

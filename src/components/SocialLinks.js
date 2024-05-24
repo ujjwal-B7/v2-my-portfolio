@@ -20,7 +20,7 @@ const SocialLinks = () => {
       variants={iconVariants}
       initial="initial"
       animate="animate"
-      className="flex md:flex-col  md:justify-center items-center  md:fixed md:bottom-0 lg:left-14 left-10 md:space-y-6 md:gap-0 gap-7 social-media-icons"
+      className="flex md:flex-col  md:justify-center items-center  md:fixed md:bottom-0 lg:left-14 left-5 md:space-y-6 md:gap-0 gap-7 social-media-icons"
     >
       <div className="icons">
         <a target="_blank" rel="noreferrer" href="https://github.com/ujjwal-B7">
