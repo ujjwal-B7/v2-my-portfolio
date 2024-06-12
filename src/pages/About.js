@@ -30,6 +30,7 @@ const About = () => {
             <li>Tailwind Css</li>
             <li>Javascript</li>
             <li>React JS</li>
+            <li>Next JS</li>
             <li>Node JS</li>
             <li>Express JS</li>
             <li>MongoDB</li>
