@@ -17,6 +17,22 @@ const projects = [
       "Developed a modern school website template with a light theme, featuring user-friendly navigation and professional design. Ensured responsiveness across all devices for optimal accessibility and experience.",
     techstack: ["React", "Tailwindcss"],
   },
+  // {
+  //   link: "https://ujjwalbasnet.vercel.app/",
+  //   image: "./images/aaryans-fitness.jpg",
+  //   name: "Another Portfolio Design",
+  //   description:
+  //     "Crafted a vibrant gym website template with fee, gallery,classes and map sections, ensuring seamless responsiveness for optimal user experience.",
+  //   techstack: ["React", "Tailwindcss"],
+  // },
+  {
+    link: "https://ideagennepal.netlify.app/",
+    image: "./images/ideagen.jpg",
+    name: "Ideagen Nepal",
+    description:
+      "Built a responsive, modern website for Ideagen with comprehensive service sections, interactive portfolios, team profiles, and optimized user experience.",
+    techstack: ["React", "Tailwindcss"],
+  },
   {
     link: "https://aaryans-fitness.netlify.app/",
     image: "./images/aaryans-fitness.jpg",
