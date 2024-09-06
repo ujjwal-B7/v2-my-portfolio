@@ -81,7 +81,7 @@ const otherProjects = [
     technologies: [
       "NextJs",
       "TailwindCss",
-      "React Query",
+      "React-Query",
       "Typescript",
       "Socket.io",
       "LiveKit",
