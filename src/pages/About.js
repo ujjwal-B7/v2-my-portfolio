@@ -32,10 +32,11 @@ const About = () => {
             <li>Css</li>
             <li>Tailwind Css</li>
             <li>Javascript</li>
-            <li>React JS</li>
-            <li>Next JS</li>
-            <li>Node JS</li>
-            <li>Express JS</li>
+            <li>Typescript</li>
+            <li>ReactJS</li>
+            <li>NextJS</li>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
             <li>MongoDB</li>
             <li>Redux</li>
             <li>Git/GitHub</li>

@@ -2,6 +2,13 @@ import React from "react";
 import { useState } from "react";
 const projects = [
   {
+    link: "https://marketplace.visualstudio.com/items?itemName=CoffeeDark.coffee-dark",
+    image: "./images/vscode-theme-marketplace.jpg",
+    name: "Coffee Dark",
+    description: `Published a minimal, dark theme for VS Code, with smooth contrasts and a focus on readability. Available on <a href="https://marketplace.visualstudio.com/items?itemName=CoffeeDark.coffee-dark" target="_blank" class="highlighted-text hover:underline">Visual Studio Marketplace</a>, providing a distraction-free coding experience.`,
+    techstack: [""],
+  },
+  {
     link: "https://crypto-template-beta.vercel.app/",
     image: "./images/crypto.jpg",
     name: "Crypto Template",
@@ -74,6 +81,7 @@ const otherProjects = [
     technologies: [
       "NextJs",
       "TailwindCss",
+      "React Query",
       "Typescript",
       "Socket.io",
       "LiveKit",
@@ -138,9 +146,13 @@ const Work = () => {
                     {project.name}
                   </a>
                 </h1>
-                <div className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4">
+                <div
+                  className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4"
+                  dangerouslySetInnerHTML={{ __html: project.description }}
+                ></div>
+                {/* <div className="md:shadow-md md:bg-[#112240] rounded-md skills-text  md:text-[20px] text-[17px] md:p-4">
                   {project.description}
-                </div>
+                </div> */}
                 <div className="project-text md:mt-3 mt-5 text md:text-[20px] text-[17px]">
                   <ul className="flex gap-4 flex-wrap ">
                     {project.techstack.map((tech, index) => (
@@ -174,7 +186,7 @@ const Work = () => {
             {otherProjects.map((project, index) => (
               <div
                 key={index}
-                className="max-w-[22rem] rounded shadow-custom  p-6 otherProjectsCard"
+                className="max-w-[22rem] rounded shadow-custom h-80 p-6 otherProjectsCard"
               >
                 <div className="flex justify-end">
                   {/* <span>
